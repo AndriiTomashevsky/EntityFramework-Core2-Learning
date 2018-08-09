@@ -2,7 +2,6 @@
 
 namespace SportsStore.Models
 {
-
     public interface IRepository
     {
         IEnumerable<Product> Products { get; }
