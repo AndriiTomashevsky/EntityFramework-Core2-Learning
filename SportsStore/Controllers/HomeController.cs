@@ -14,6 +14,8 @@ namespace SportsStore.Controllers
 
         public IActionResult Index()
         {
+            System.Console.Clear();
+
             return View(repository.Products);
         }
 
