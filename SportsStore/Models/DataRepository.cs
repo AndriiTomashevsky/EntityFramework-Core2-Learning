@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace SportsStore.Models
 {
@@ -15,7 +16,7 @@ namespace SportsStore.Models
         {
             get
             {
-                return context.Products;
+                return context.Products.ToArray();
             }
         }
 
