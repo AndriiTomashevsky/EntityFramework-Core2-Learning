@@ -30,7 +30,9 @@ namespace SportsStore
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            //app.UseBrowserLink();
             app.UseMvcWithDefaultRoute();
+           
         }
     }
 }

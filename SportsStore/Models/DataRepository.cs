@@ -4,7 +4,6 @@ namespace SportsStore.Models
 {
     public class DataRepository : IRepository
     {
-        private List<Product> data = new List<Product>();
         private DataContext context;
 
         public DataRepository(DataContext ctx)
