@@ -8,5 +8,6 @@ namespace SportsStore.Models
         Product GetProduct(long key);
         void AddProduct(Product product);
         void UpdateProduct(Product product);
+        void UpdateAll(Product[] products);
     }
 }
