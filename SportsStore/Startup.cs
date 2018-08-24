@@ -32,7 +32,7 @@ namespace SportsStore
             app.UseStaticFiles();
             //app.UseBrowserLink();
             app.UseMvcWithDefaultRoute();
-           
+            SeedData.EnsurePopulated(app);
         }
     }
 }
