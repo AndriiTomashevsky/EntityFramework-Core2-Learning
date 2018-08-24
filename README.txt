@@ -1,0 +1,1 @@
+Projects\EntityFramework Core\Freeman A. - Pro Entity Framework Core 2 for ASP.NET Core MVC\04 - SportsStore

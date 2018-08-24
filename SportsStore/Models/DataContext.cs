@@ -12,11 +12,11 @@ namespace SportsStore.Models
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         public class ApplicationDbContextFactory
         : IDesignTimeDbContextFactory<DataContext>
         {
-
             public DataContext CreateDbContext(string[] args) =>
                 Program.BuildWebHost(args).Services
                     .GetRequiredService<DataContext>();

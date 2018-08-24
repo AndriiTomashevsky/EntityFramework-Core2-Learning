@@ -14,29 +14,23 @@ namespace SportsStore.Models
 
             context.Database.Migrate();
 
-            if (!context.Products.Any())
+            if (!context.Categories.Any())
             {
-                context.Products.AddRange(
-                new Product
+                context.Categories.AddRange(
+                new Category
                 {
-                    Name = "Kayak",
-                    Category = "Watersports",
-                    PurchasePrice = 200,
-                    RetailPrice = 275
+                    Name = "Watersports",
+                    Description = "Make a splash",
                 },
-                new Product
+                new Category
                 {
-                    Name = "Lifejacket",
-                    Category = "Watersports",
-                    PurchasePrice = 30,
-                    RetailPrice = 48.95m
+                    Name = "Soccer",
+                    Description = "The world’s favorite game",
                 },
-                new Product
+                new Category
                 {
-                    Name = "Soccer Ball",
-                    Category = "Soccer",
-                    PurchasePrice = 15.50m,
-                    RetailPrice = 19.50m
+                    Name = "Running",
+                    Description = "Run like the wind",
                 });
 
                 context.SaveChanges();
